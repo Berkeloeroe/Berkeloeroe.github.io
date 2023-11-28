@@ -229,8 +229,7 @@ footer {
 @media(max-width: 500px) {
 
     header {
-        margin: 1% 7.5%;
-        margin-bottom: 7.5%;
+        margin: 7.5% 7.5%;
     }
 
     main {
@@ -251,6 +250,7 @@ footer {
 
     .contentlinks {
         width: 100%;
+        margin-bottom: 5%;
     }
 
     .contentrechts {
@@ -289,10 +289,6 @@ footer {
                 .minifooter {
                     padding: 3% 0;
                 }
-
-        .knopje {
-            display: none;
-        }
 
         .navbar {
             display: none;
