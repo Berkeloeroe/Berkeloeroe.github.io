@@ -162,12 +162,20 @@ h4 {
     max-width: 60%;
 }
 
-.ja {
+.homepagevideo {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin: 7,5% 15%;
+}
+
+.aboutsexy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 7, 5% 15%;
 }
 
 /* .ja h2{
@@ -267,13 +275,21 @@ footer {
         width: 100%;
     }
 
-        .ja {
+        .homepagevideo {
             display: flex;
 
             align-items: start;
             flex-direction: column;
             margin: 7.5% 7.5%;
         }
+
+                .aboutsexy {
+                    display: flex;
+        
+                    align-items: start;
+                    flex-direction: column;
+                    margin: 7.5% 7.5%;
+                }
 
         .contentrechtsover {
             width: 100%;
