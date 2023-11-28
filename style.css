@@ -178,7 +178,7 @@ footer {
     background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(62, 62, 62, 1) 100%);        
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
-    padding: 4% 15%;
+    padding: 3% 15%;
     margin-top: 5%;
 }
 
@@ -240,6 +240,10 @@ footer {
     
         }
 
+        .over {
+            margin: 0 5%;
+        }
+
     .contentlinks {
         width: 100%;
     }
@@ -284,9 +288,9 @@ footer {
             display: block;
             width: 40px;
         }
-.favonummers {
-    text-align: start;
-}
+        .favonummers {
+            text-align: start;
+        }
                 .drienummers {
                     display: flex;
                     flex-direction: column;        
