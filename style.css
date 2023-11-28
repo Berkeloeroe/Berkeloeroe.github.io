@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
-/* #f5ea7a */
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -27,6 +25,8 @@ header {
     width: 150px;
     cursor: pointer;
 }
+
+
 
 /* https: //codepen.io/sreisner/pen/yOOOjx */
 .nav-link {
@@ -148,9 +148,13 @@ h4 {
 }
 
 
+.contentrechtsover {
+    width: 50%;
+}
 
 .duapicca {
-    max-width: 700px;
+    max-width: 60%;
+    float: right;
 }
 
 .overvideo {
@@ -232,6 +236,10 @@ footer {
         margin: 7.5% 7.5%;
     }
 
+    header .knopje {
+        display: none;
+    }
+
     main {
         flex-direction: column;
         align-content: center;
@@ -243,6 +251,8 @@ footer {
             color: #252422;
     
         }
+
+                
 
         .over {
             margin: 0 7.5%;
@@ -262,7 +272,16 @@ footer {
 
             align-items: start;
             flex-direction: column;
-            margin: 0% 7.5%;
+            margin: 7.5% 7.5%;
+        }
+
+        .contentrechtsover {
+            width: 100%;
+        }
+
+        .duapicca {
+            max-width: 80%;
+       
         }
 
         .overvideo {
@@ -288,6 +307,10 @@ footer {
 
                 .minifooter {
                     padding: 3% 0;
+                }
+
+                .sociallink {
+                    margin: 0;
                 }
 
         .navbar {
