@@ -285,6 +285,10 @@ footer {
                     margin: 0 7.5%;
                 }
 
+                .minifooter {
+                    padding: 3% 0;
+                }
+
         .knopje {
             display: none;
         }
@@ -299,6 +303,7 @@ footer {
         }
         .favonummers {
             text-align: start;
+            margin: 7.5% 7.5%;
         }
                 .drienummers {
                     display: flex;
