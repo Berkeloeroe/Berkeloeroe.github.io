@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+/* #f5ea7a */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: rgb(255, 254, 190);
+    background: linear-gradient(0deg, rgba(255, 254, 190, 1) 0%, rgba(255, 255, 255, 1) 100%);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1% 15%;
+}
+
+.logo {
+    width: 150px;
+    cursor: pointer;
+}
+
+/* https: //codepen.io/sreisner/pen/yOOOjx */
+.nav-link {
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+    padding: 20px 0px;
+    margin: 0px 20px;
+    display: inline-block;
+    position: relative;
+    opacity: 1;
+}
+
+.nav-link:hover {
+    opacity: 0.75;
+}
+
+.nav-link::before {
+    transition: 300ms;
+    height: 5px;
+    content: "";
+    position: absolute;
+    background-color: rgb(29, 29, 14);
+}
+
+.nav-link-ltr::before {
+    width: 0%;
+    bottom: 10px;
+    border-radius: 50px;
+}
+
+.nav-link-ltrac::before {
+    width: 100%;
+    bottom: 10px;
+    border-radius: 50px;
+}
+
+.nav-link-ltr:hover::before {
+    width: 100%;
+    border-radius: 50px;
+}
+
+.knopje {
+    font-size: 16px;
+    font-weight: bolder;
+    padding: 14px 35px;
+    background-color: rgb(29, 29, 14);
+    border: none;
+    color: white;    
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.knopje:hover {
+    padding: 14px 90px;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 7.5% 15%;
+
+}
+
+h1, h2 {
+    font-size: 64px;
+    color: #252422;
+
+}
+
+h3 {
+    font-size: 32px;
+        color: #252422;
+}
+
+h4 {
+    font-size: 25px;
+}
+
+.over {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 7.5% 15%;
+}
+
+.favonummers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 7.5% 15%;
+    text-align: center;
+}
+
+.drienummers {
+    margin-top: 2%;
+    display: flex;
+    gap: 4%;
+    justify-content: space-between;
+
+}
+
+.contentlinks {
+    width: 50%;
+}
+
+.contentrechts {
+    width: 30%;
+}
+
+ p {
+    font-size:  18px;
+    margin: 2% 0;
+    line-height: 1.6;
+    color: rgb(29, 29, 14);
+}
+
+
+
+.duapicca {
+    max-width: 700px;
+}
+
+.overvideo {
+    margin-top: 2%;
+    max-width: 60%;
+}
+
+.ja {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 7,5% 15%;
+}
+
+/* .ja h2{
+    margin-bottom: 2%;
+
+} */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(62, 62, 62, 1) 100%);        
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    padding: 4% 15%;
+    margin-top: 5%;
+}
+
+.footer__headline {
+    color: white;}
+
+
+.footer__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+.footer__list a, li {
+    color: white;
+    text-decoration: none;
+}
+
+.footer__list {
+    margin-top: 10%;
+}
+
+.sociallink {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 3%;
+}
+
+.socialicon {
+    width: 20px;
+}
+
+.minifooter {
+    display: flex;
+    color: white;
+    background-color: black;
+    padding: 1% 0;
+}
+
+.kopierijt {
+    color: white;
+    margin: 0 15%;
+    font-size: 16px;
+}
+
+@media(max-width: 500px) {
+
+    main {
+        flex-direction: column;
+        align-content: center;
+    }
+
+        h1,
+        h2 {
+            font-size: 50px;
+            color: #252422;
+    
+        }
+
+    .contentlinks {
+        width: 100%;
+    }
+
+    .contentrechts {
+        width: 100%;
+    }
+
+        .ja {
+            display: flex;
+
+            align-items: start;
+            flex-direction: column;
+            margin: 0% 15%;
+        }
+
+        .overvideo {
+            max-width: 100%;
+        }
+
+    footer {
+        flex-direction: column;
+    }
+
+        .footer__headline {
+            margin-top: 10%;
+        }
+
+                .footer__list {
+                    margin-top: 3%;
+                }
+
+        .knopje {
+            display: none;
+        }
+
+        .navbar {
+            display: none;
+        }
+
+        .ham {
+            display: block;
+            width: 40px;
+        }
+.favonummers {
+    text-align: start;
+}
+                .drienummers {
+                    display: flex;
+                    flex-direction: column;        
+                }
+}
