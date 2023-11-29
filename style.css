@@ -1,11 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@500&family=Open+Sans&family=Oswald:wght@700&display=swap');
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -19,14 +17,18 @@ header {
     justify-content: space-between;
     align-items: center;
     margin: 1% 15%;
+    position: sticky;
+}
+
+section {
+    display: flex;
+    margin: 0 15%;
 }
 
 .logo {
     width: 150px;
     cursor: pointer;
 }
-
-
 
 /* https: //codepen.io/sreisner/pen/yOOOjx */
 .nav-link {
@@ -94,26 +96,37 @@ header {
 
 }
 
+/* typografie */
+
 h1, h2 {
     font-size: 64px;
     color: #252422;
+    font-family: 'Oswald', sans-serif;
 
 }
 
 h3 {
     font-size: 32px;
-        color: #252422;
+    color: #252422;
 }
 
 h4 {
     font-size: 25px;
+    font-family: 'Oswald', sans-serif;
+}
+
+p {
+    font-size: 18px;
+    /* margin: 2% 0; */
+    line-height: 1.6;
+    color: rgb(29, 29, 14);
 }
 
 .over {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 7.5% 15%;
+    margin: 5% 15%;
 }
 
 .favonummers {
@@ -139,14 +152,6 @@ h4 {
 .contentrechts {
     width: 30%;
 }
-
- p {
-    font-size:  18px;
-    margin: 2% 0;
-    line-height: 1.6;
-    color: rgb(29, 29, 14);
-}
-
 
 .contentrechtsover {
     width: 50%;
@@ -317,9 +322,7 @@ footer {
                     margin-top: 3%;
                 }
 
-                .kopierijt {
-                    margin: 0 7.5%;
-                }
+               
 
                 .minifooter {
                     padding: 3% 0;
