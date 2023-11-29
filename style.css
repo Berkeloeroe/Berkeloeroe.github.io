@@ -4,13 +4,13 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+        overflow-x: hidden;
     font-family: 'Montserrat', sans-serif;
 }
 
 body {
     background: rgb(255, 254, 190);
     background: linear-gradient(0deg, rgba(255, 254, 190, 1) 0%, rgba(255, 255, 255, 1) 100%);
-    overflow-x: hidden;
 }
 
 header {
