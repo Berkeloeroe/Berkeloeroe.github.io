@@ -10,6 +10,7 @@
 body {
     background: rgb(255, 254, 190);
     background: linear-gradient(0deg, rgba(255, 254, 190, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    overflow-x: hidden;
 }
 
 header {
@@ -18,6 +19,7 @@ header {
     align-items: center;
     margin: 1% 15%;
     position: sticky;
+    align-items: start;
 }
 
 section {
@@ -182,11 +184,6 @@ p {
     flex-direction: column;
     margin: 7, 5% 15%;
 }
-
-/* .ja h2{
-    margin-bottom: 2%;
-
-} */
 
 footer {
     display: flex;
