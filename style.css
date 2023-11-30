@@ -23,10 +23,11 @@ header {
 
 section {
     display: flex;
-    height: 600px;
-    background-image: url("media/album.jpg");
+    height: 100vh;
+    background-image: url("media/dualipa.png");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 
@@ -176,7 +177,7 @@ p {
 .overvideo {
     margin-top: 2%;
     max-width: 60%;
-    background-color: aqua;
+    background-color: #252422;
 }
 
 .favonummers {
