@@ -9,7 +9,7 @@
   </head>
   <body>
     <header>
-      <a class="looo" href="index.html"
+      <a href="index.html"
         ><img class="logo" src="media/logo.png" alt="logo"
       /></a>
       <nav>
@@ -18,42 +18,54 @@
           <a class="nav-link nav-link-ltr" href="index.html">Home</a>
           <a class="nav-link nav-link-ltrac" href="over.html">Over</a>
           <a class="nav-link nav-link-ltr" href="nummers.html">Nummers</a>
-          <a class="nav-link nav-link-ltr" href="#">Contact</a>
+          <a class="nav-link nav-link-ltr" href="contact.html">Contact</a>
         </div>
       </nav>
       <a
         class="cta"
         href="https://open.spotify.com/artist/6M2wZ9GZgrQXHCFfjv46we"
-        ><button class="knopje">Spotify</button></a
+        ><button class="spotifyknopje">Spotify</button></a
       >
+      <button class="hamburger">
+        <div class="bar"></div>
+      </button>
     </header>
-
+    <nav class="mobile-nav">
+      <a href="index.html">Home</a>
+      <a href="over.html">Over</a>
+      <a href="nummers.html">Pokoes</a>
+      <a href="#">Contact</a>
+    </nav>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     <main class="over">
       <div class="contentlinks">
         <h4>Beste artiest ever</h4>
         <h1>Over Dua Lipa</h1>
         <p>
           Ze is super mooi en maakt hele goede muziek en is op dit moment 28
-          jaar oud, 1.73cm lang en geboren in het Verenigd Koninkrijk.Ze is
-          super mooi en maakt hele goede muziek en is op dit moment 28 jaar oud,
-          1.73cm lang en geboren in het Verenigd Koninkrijk.
+          jaar oud, 1.73cm lang en geboren in het Verenigd Koninkrijk. Haar papa
+          is toevallig ook zanger maar haar mama niet. Dua Lipa heeft ook
+          familie in Nederland die ze soms bezoekt. Misschien kan ik haar een
+          keer ontmoeten.
         </p>
       </div>
+
       <div class="contentrechtsover">
-        <img class="duapicca" src="media/dualipablond.png" alt="dualipa" />
+        <img class="duapicca" src="media/duablond.png" alt="dualipa" />
       </div>
     </main>
-    <div class="ja">
+
+    <div class="aboutsexy">
       <h4>Ja leuk</h4>
+      <!-- class="video-bg" -->
+      <!-- type="video/mp4" -->
 
       <h2>Bekijk deze video</h2>
       <video
         class="overvideo"
         title="duavideo"
         controls
-        class="video-bg"
         src="media/onekiss.mp4"
-        type="video/mp4"
       ></video>
     </div>
     <footer>
@@ -110,5 +122,7 @@
     <div class="minifooter">
       <p class="kopierijt">Copyright © 2024 Randies website</p>
     </div>
+    <!-- javascript  -->
+    <script src="dualipa.js"></script>
   </body>
 </html>

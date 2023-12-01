@@ -1,13 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-
-/* #f5ea7a */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@500&family=Open+Sans&family=Oswald:wght@700&display=swap');
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    scroll-behavior: smooth;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -23,6 +21,16 @@ header {
     margin: 1% 15%;
 }
 
+.hiero {
+    display: flex;
+    height: 100vh;
+    background-image: url("media/dualipa.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
 .logo {
     width: 150px;
     cursor: pointer;
@@ -33,7 +41,7 @@ header {
     font-weight: bold;
     font-size: 16px;
     text-decoration: none;
-    color: black;
+    color: rgb(29, 29, 14);
     padding: 20px 0px;
     margin: 0px 20px;
     display: inline-block;
@@ -70,7 +78,7 @@ header {
     border-radius: 50px;
 }
 
-.knopje {
+.spotifyknopje {
     font-size: 16px;
     font-weight: bolder;
     padding: 14px 35px;
@@ -82,7 +90,7 @@ header {
     transition: 0.3s;
 }
 
-.knopje:hover {
+.spotifyknopje:hover {
     padding: 14px 90px;
 }
 
@@ -94,26 +102,82 @@ header {
 
 }
 
+/* https: //www.w3schools.com/howto/howto_js_scroll_to_top.asp */
+
+#myBtn {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 5%;
+    /* Place the button at the bottom of the page */
+    right: 15%;
+    /* Place the button 30px from the right */
+    z-index: 99;
+    /* Make sure it does not overlap */
+    border: none;
+    /* Remove borders */
+    outline: none;
+    /* Remove outline */
+    background-color: #252422;
+    /* Set a background color */
+    color: white;
+    /* Text color */
+    cursor: pointer;
+    /* Add a mouse pointer on hover */
+    padding: 16px;
+    /* Some padding */
+    border-radius: 50px;
+    /* Rounded corners */
+    font-size: 16px;
+    /* Increase font size */
+}
+
+#myBtn:hover {
+    background-color: #555;
+    /* Add a dark-grey background on hover */
+}
+
+/* typografie */
+
 h1, h2 {
     font-size: 64px;
     color: #252422;
+    font-family: 'Oswald', sans-serif;
+    line-height: 1.1;
+    padding-bottom: 10px;
+    overflow-y: hidden;
 
 }
 
 h3 {
     font-size: 32px;
-        color: #252422;
+    color: #252422;
 }
 
 h4 {
     font-size: 25px;
+    font-family: 'Oswald', sans-serif;
+    color: #252422;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: rgb(29, 29, 14);
 }
 
 .over {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 7.5% 15%;
+    margin: 5% 15%;
+}
+
+.overvideo {
+    margin-top: 2%;
+    max-width: 60%;
+    background-color: #252422;
 }
 
 .favonummers {
@@ -136,29 +200,24 @@ h4 {
     width: 50%;
 }
 
+.contentlinks button {
+    margin-top: 1%;
+}
+
 .contentrechts {
     width: 30%;
 }
 
- p {
-    font-size:  18px;
-    margin: 2% 0;
-    line-height: 1.6;
-    color: rgb(29, 29, 14);
+.contentrechtsover {
+    width: 50%;
 }
-
-
 
 .duapicca {
-    max-width: 700px;
-}
-
-.overvideo {
-    margin-top: 2%;
     max-width: 60%;
+    float: right;
 }
 
-.ja {
+.homepagevideo {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -166,10 +225,13 @@ h4 {
     margin: 7,5% 15%;
 }
 
-/* .ja h2{
-    margin-bottom: 2%;
-
-} */
+.aboutsexy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 7, 5% 15%;
+}
 
 footer {
     display: flex;
@@ -178,7 +240,7 @@ footer {
     background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(62, 62, 62, 1) 100%);        
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
-    padding: 4% 15%;
+    padding: 3% 15%;
     margin-top: 5%;
 }
 
@@ -228,6 +290,14 @@ footer {
 
 @media(max-width: 500px) {
 
+    header {
+        margin: 7.5% 7.5%;
+    }
+
+    header .knopje {
+        display: none;
+    }
+
     main {
         flex-direction: column;
         align-content: center;
@@ -240,20 +310,44 @@ footer {
     
         }
 
+                
+
+        .over {
+            margin: 0 7.5%;
+        }
+
     .contentlinks {
         width: 100%;
+        margin-bottom: 5%;
     }
 
     .contentrechts {
         width: 100%;
     }
 
-        .ja {
+        .homepagevideo {
             display: flex;
 
             align-items: start;
             flex-direction: column;
-            margin: 0% 15%;
+            margin: 7.5% 7.5%;
+        }
+
+                .aboutsexy {
+                    display: flex;
+        
+                    align-items: start;
+                    flex-direction: column;
+                    margin: 7.5% 7.5%;
+                }
+
+        .contentrechtsover {
+            width: 100%;
+        }
+
+        .duapicca {
+            max-width: 80%;
+       
         }
 
         .overvideo {
@@ -262,6 +356,7 @@ footer {
 
     footer {
         flex-direction: column;
+        padding: 3% 7.5%;
     }
 
         .footer__headline {
@@ -272,9 +367,19 @@ footer {
                     margin-top: 3%;
                 }
 
-        .knopje {
-            display: none;
-        }
+                .spotifyknopje {
+                    display: none;
+                }
+
+               
+
+                .minifooter {
+                    padding: 3% 0;
+                }
+
+                .sociallink {
+                    margin: 0;
+                }
 
         .navbar {
             display: none;
@@ -284,11 +389,122 @@ footer {
             display: block;
             width: 40px;
         }
-.favonummers {
-    text-align: start;
-}
+        .favonummers {
+            text-align: start;
+            margin: 7.5% 7.5%;
+        }
                 .drienummers {
                     display: flex;
                     flex-direction: column;        
                 }
+
+                .drienummers iframe {
+                    margin-top: 5%;
+                }
+}
+
+.hamburger {
+    position: relative;
+    display: block;
+    width: 35px;
+    cursor: pointer;
+
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+    z-index: 100;
+}
+
+.hamburger .bar,
+.hamburger:after,
+.hamburger:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: #252422;
+    margin: 6px 0px;
+    transition: 0.4s;
+    border-radius: 50px;
+}
+
+.hamburger.is-active:before {
+    transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.hamburger.is-active:after {
+    transform: rotate(45deg) translate(-9px, -8px);
+}
+
+.hamburger.is-active .bar {
+    opacity: 0;
+}
+
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    min-height: 100vh;
+    display: block;
+    z-index: 98;
+    background: rgb(255, 254, 190);
+    background: linear-gradient(0deg, rgba(255, 254, 190, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    padding-top: 120px;
+    transition: 0.4s;
+}
+
+.mobile-nav.is-active {
+    left: 0;
+}
+
+.mobile-nav a {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto 16px;
+    text-align: center;
+    padding: 12px 16px;
+    background-color: #252422;
+  
+
+    color: #FFF;
+    text-decoration: none;
+}
+
+.mobile-nav a:hover {
+    background-color: #24104f;
+}
+
+@media (min-width: 768px) {
+    .mobile-nav {
+        display: none;
+    }
+
+    .hamburger {
+        display: none;
+    }
+}
+
+.button {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+
+    display: inline-block;
+    color: #FFF;
+    font-size: 20px;
+    background-color: #FF9FDB;
+    padding: 12px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+
+    @media (max-width: 767px) {
+        font-size: 18px;
+    }
 }
