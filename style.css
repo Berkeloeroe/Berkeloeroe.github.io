@@ -21,7 +21,7 @@ header {
     margin: 1% 15%;
 }
 
-section {
+.hiero {
     display: flex;
     height: 100vh;
     background-image: url("media/dualipa.png");
@@ -474,7 +474,7 @@ footer {
 }
 
 .mobile-nav a:hover {
-    background-color: #24104f;
+    background-color: #252422b9;
 }
 
 @media (min-width: 768px) {
