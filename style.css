@@ -94,6 +94,22 @@ header {
     padding: 14px 90px;
 }
 
+.spotifyknopjeheader {
+    font-size: 16px;
+    font-weight: bolder;
+    padding: 14px 35px;
+    background-color: rgb(29, 29, 14);
+    border: none;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.spotifyknopjeheader:hover {
+    padding: 14px 90px;
+}
+
 .home {
     display: flex;
     align-items: center;
@@ -368,9 +384,12 @@ footer {
                 }
 
                 .spotifyknopje {
-                    display: none;
                     width: 100%;
                 }
+
+                                .spotifyknopjeheader {
+                                    display: none;
+                                }
 
                 .minifooter {
                     padding: 5% 0;
