@@ -310,10 +310,6 @@ footer {
         margin: 7.5% 7.5%;
     }
 
-    header .knopje {
-        display: none;
-    }
-
     main {
         flex-direction: column;
         align-content: center;
@@ -383,13 +379,15 @@ footer {
                     margin-top: 3%;
                 }
 
-                .spotifyknopje {
-                    width: 100%;
-                }
-
+              
                                 .spotifyknopjeheader {
                                     display: none;
                                 }
+
+                                                                  .spotifyknopje {
+                                                                      width: 100%;
+                                                                      margin-top: 3% !important;
+                                                                  }
 
                 .minifooter {
                     padding: 5% 0;
@@ -432,7 +430,6 @@ footer {
     display: block;
     width: 35px;
     cursor: pointer;
-
     appearance: none;
     background: none;
     outline: none;
@@ -490,11 +487,10 @@ footer {
     margin: 0 auto 16px;
     text-align: center;
     padding: 12px 16px;
-    background-color: #252422;
-  
-
-    color: #FFF;
+    color: #252422;
     text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .mobile-nav a:hover {
