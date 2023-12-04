@@ -494,7 +494,7 @@ footer {
 }
 
 .mobile-nav a:hover {
-    background-color: #252422b9;
+    color: #5e5b55;
 }
 
 @media (min-width: 768px) {
