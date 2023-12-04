@@ -8,12 +8,13 @@
     <link rel="shortcut icon" type="x-icon" href="media/hoofd.png" />
   </head>
   <body>
+    <!-- Header -->
     <header>
       <a href="index.html"
         ><img class="logo" src="media/logo.png" alt="logo"
       /></a>
+      <!-- Navigatie -->
       <nav>
-        <!-- https: //codepen.io/sreisner/pen/yOOOjx -->
         <div class="navbar">
           <a class="nav-link nav-link-ltr" href="index.html">Home</a>
           <a class="nav-link nav-link-ltrac" href="over.html">Over</a>
@@ -29,48 +30,50 @@
       <button class="hamburger">
         <div class="bar"></div>
       </button>
+      <!-- Mobile Navigatie -->
+      <nav class="mobile-nav">
+        <a href="index.html">Home</a>
+        <a href="over.html">Over</a>
+        <a href="nummers.html">Pokoes</a>
+        <a href="contact.html">Contact</a>
+        <a href="https://open.spotify.com/artist/6M2wZ9GZgrQXHCFfjv46we"
+          >Spotify</a
+        >
+      </nav>
     </header>
-    <nav class="mobile-nav">
-      <a href="index.html">Home</a>
-      <a href="over.html">Over</a>
-      <a href="nummers.html">Pokoes</a>
-      <a href="contact.html">Contact</a>
-      <a href="https://open.spotify.com/artist/6M2wZ9GZgrQXHCFfjv46we"
-        >Spotify</a
-      >
-    </nav>
+    <!-- Button to top -->
     <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-    <main class="over">
-      <div class="contentlinks">
-        <h4>Beste artiest ever</h4>
-        <h1>Over Dua Lipa</h1>
-        <p>
-          Ze is super mooi en maakt hele goede muziek en is op dit moment 28
-          jaar oud, 1.73cm lang en geboren in het Verenigd Koninkrijk. Haar papa
-          is toevallig ook zanger maar haar mama niet. Dua Lipa heeft ook
-          familie in Nederland die ze soms bezoekt. Misschien kan ik haar een
-          keer ontmoeten.
-        </p>
-      </div>
-
-      <div class="contentrechtsover">
-        <img class="duapicca" src="media/duablond.png" alt="dualipa" />
-      </div>
+    <main>
+      <section class="over">
+        <div class="contentlinks">
+          <h4>Beste artiest ever</h4>
+          <h1>Over Dua Lipa</h1>
+          <p>
+            Ze is super mooi en maakt hele goede muziek en is op dit moment 28
+            jaar oud, 1.73cm lang en geboren in het Verenigd Koninkrijk. Haar
+            papa is toevallig ook zanger maar haar mama niet. Dua Lipa heeft ook
+            familie in Nederland die ze soms bezoekt. Misschien kan ik haar een
+            keer ontmoeten.
+          </p>
+        </div>
+        <div class="contentrechtsover">
+          <img class="duapicca" src="media/duablond.png" alt="dualipa" />
+        </div>
+      </section>
+      <section>
+        <div class="aboutsexy">
+          <h4>Ja leuk</h4>
+          <h2>Bekijk deze video</h2>
+          <video
+            class="overvideo"
+            title="duavideo"
+            controls
+            src="media/onekiss.mp4"
+          ></video>
+        </div>
+      </section>
     </main>
-
-    <div class="aboutsexy">
-      <h4>Ja leuk</h4>
-      <!-- class="video-bg" -->
-      <!-- type="video/mp4" -->
-
-      <h2>Bekijk deze video</h2>
-      <video
-        class="overvideo"
-        title="duavideo"
-        controls
-        src="media/onekiss.mp4"
-      ></video>
-    </div>
+    <!-- Footer -->
     <footer>
       <div>
         <h4 class="footer__headline">Navigatie</h4>

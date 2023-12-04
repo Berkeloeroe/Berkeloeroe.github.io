@@ -36,6 +36,7 @@ header {
     cursor: pointer;
 }
 
+/* Navigatie */
 /* https: //codepen.io/sreisner/pen/yOOOjx */
 .nav-link {
     font-weight: bold;
@@ -78,22 +79,6 @@ header {
     border-radius: 50px;
 }
 
-.spotifyknopje {
-    font-size: 16px;
-    font-weight: bolder;
-    padding: 14px 35px;
-    background-color: rgb(29, 29, 14);
-    border: none;
-    color: white;    
-    border-radius: 50px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.spotifyknopje:hover {
-    padding: 14px 90px;
-}
-
 .spotifyknopjeheader {
     font-size: 16px;
     font-weight: bolder;
@@ -110,52 +95,45 @@ header {
     padding: 14px 90px;
 }
 
-.home {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 7.5% 15%;
+/* Buttons */
+.spotifyknopje {
+    font-size: 16px;
+    font-weight: bolder;
+    padding: 14px 35px;
+    background-color: rgb(29, 29, 14);
+    border: none;
+    color: white;    
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
 
+.spotifyknopje:hover {
+    padding: 14px 90px;
 }
 
 /* https: //www.w3schools.com/howto/howto_js_scroll_to_top.asp */
-
 #myBtn {
     display: none;
-    /* Hidden by default */
     position: fixed;
-    /* Fixed/sticky position */
     bottom: 5%;
-    /* Place the button at the bottom of the page */
     right: 15%;
-    /* Place the button 30px from the right */
     z-index: 99;
-    /* Make sure it does not overlap */
     border: none;
-    /* Remove borders */
     outline: none;
-    /* Remove outline */
     background-color: #252422;
-    /* Set a background color */
     color: white;
-    /* Text color */
     cursor: pointer;
-    /* Add a mouse pointer on hover */
     padding: 20px 15px;
-    /* Some padding */
     border-radius: 50px;
-    /* Rounded corners */
     font-size: 16px;
-    /* Increase font size */
 }
 
 #myBtn:hover {
     background-color: #555;
-    /* Add a dark-grey background on hover */
 }
 
 /* typografie */
-
 h1, h2 {
     font-size: 64px;
     color: #252422;
@@ -163,7 +141,6 @@ h1, h2 {
     line-height: 1.1;
     padding-bottom: 10px;
     overflow-y: hidden;
-
 }
 
 h3 {
@@ -183,6 +160,24 @@ p {
     color: rgb(29, 29, 14);
 }
 
+/* Home pagina */
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 7.5% 15%;
+
+}
+
+.homepagevideo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 7, 5% 15%;
+}
+
+/* About pagina */
 .over {
     display: flex;
     align-items: center;
@@ -192,15 +187,29 @@ p {
 
 .overvideo {
     margin-top: 2%;
-    max-width: 60%;
+    max-width: 100%;
     background-color: #252422;
 }
 
+.aboutsexy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 5% 15%;
+}
+
+.duapicca {
+    max-width: 60%;
+    float: right;
+}
+
+/* Pokoes pagina */
 .favonummers {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 7.5% 15%;
+    margin: 5% 15%;
     text-align: center;
 }
 
@@ -209,7 +218,6 @@ p {
     display: flex;
     gap: 4%;
     justify-content: space-between;
-
 }
 
 .contentlinks {
@@ -228,27 +236,7 @@ p {
     width: 50%;
 }
 
-.duapicca {
-    max-width: 60%;
-    float: right;
-}
-
-.homepagevideo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 7,5% 15%;
-}
-
-.aboutsexy {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 7, 5% 15%;
-}
-
+/* Footer */
 footer {
     display: flex;
     justify-content: space-between;
@@ -257,7 +245,7 @@ footer {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     padding: 3% 15%;
-    margin-top: 5%;
+    /* margin-top: 5%; */
 }
 
 .footer__headline {
@@ -274,6 +262,10 @@ footer {
 .footer__list a, li {
     color: white;
     text-decoration: none;
+}
+
+.footer__list a:hover {
+    opacity: 0.75;
 }
 
 .footer__list {
@@ -304,6 +296,7 @@ footer {
     font-size: 16px;
 }
 
+/* Mobiel */
 @media(max-width: 500px) {
 
     header {
@@ -322,10 +315,9 @@ footer {
     
         }
 
-                
-
         .over {
             margin: 0 7.5%;
+            flex-direction: column;
         }
 
     .contentlinks {
@@ -425,6 +417,7 @@ footer {
                 }
 }
 
+/* Mobiele Navigatie */
 .hamburger {
     position: relative;
     display: block;
