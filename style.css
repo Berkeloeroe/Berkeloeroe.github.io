@@ -358,12 +358,15 @@ footer {
     list-style: none;
     padding: 0;
     margin: 0;
-
 }
 
 .footer__list a, li {
     color: white;
     text-decoration: none;
+}
+
+.footer__list li {
+    margin: 5px 0;
 }
 
 .footer__list a:hover {
@@ -378,7 +381,6 @@ footer {
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-top: 3%;
 }
 
 .socialicon {
