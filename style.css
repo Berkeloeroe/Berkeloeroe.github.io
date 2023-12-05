@@ -61,7 +61,6 @@ p {
     width:100%;
     height:100%;
     display:flex;
-    /* flex-direction:column; */
     justify-content:center;
   }
   
@@ -111,8 +110,12 @@ p {
     width: 50%;
     margin:auto;
   }
+
+  .callout h1 {
+        color: #FFF;
+  }
   
-  .button {
+  /* .button {
     text-transform:uppercase;
     background-color:transparent;
     border-radius:40px;
@@ -127,9 +130,9 @@ p {
       
     }
     
-  }
+  } */
   
-  .support {
+  /* .support {
     position: fixed;
     bottom: 60px;
     right: 20px;
@@ -159,12 +162,8 @@ p {
         width: 100%;
       }
     }
-  }
+  } */
   
-
-
-
-
 /* Navigatie */
 /* https: //codepen.io/sreisner/pen/yOOOjx */
 .nav-link {
