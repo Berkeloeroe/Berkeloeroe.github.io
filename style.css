@@ -115,55 +115,6 @@ p {
         color: #FFF;
   }
   
-  /* .button {
-    text-transform:uppercase;
-    background-color:transparent;
-    border-radius:40px;
-    padding:4px;
-    border:1px solid rgba(184,70,71,1);
-    margin-top:20px;
-
-    .inner{
-    background-color:rgba(184,70,71,1);
-    padding:15px 30px;
-    border-radius:40px;
-      
-    }
-    
-  } */
-  
-  /* .support {
-    position: fixed;
-    bottom: 60px;
-    right: 20px;
-    text-transform: uppercase;
-    font-size: 9px;
-    letter-spacing: 1px;
-    text-align: right;
-    position: relative;
-    z-index: 10;
-    a {
-      color: white;
-      text-decoration: none;
-      position: relative;
-      display: inline-block;
-      margin-top: 10px;
-      &:before {
-        display: block;
-        position: absolute;
-        content: '';
-        bottom: -2px;
-        width: 0;
-        height: 1px;
-        background-color: rgba(white, .3);
-        transition: .3s;
-      }
-      &:hover:before {
-        width: 100%;
-      }
-    }
-  } */
-  
 /* Navigatie */
 /* https: //codepen.io/sreisner/pen/yOOOjx */
 .nav-link {
@@ -220,7 +171,8 @@ p {
 }
 
 .spotifyknopjeheader:hover {
-    padding: 14px 90px;
+    /* padding: 14px 90px; */
+    opacity: 0.75;
 }
 
 /* Buttons */
@@ -237,7 +189,8 @@ p {
 }
 
 .spotifyknopje:hover {
-    padding: 14px 90px;
+    /* padding: 14px 90px; */
+    opacity: 0.75;
 }
 
 /* https: //www.w3schools.com/howto/howto_js_scroll_to_top.asp */
