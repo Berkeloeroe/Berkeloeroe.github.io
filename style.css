@@ -291,6 +291,14 @@ p {
     width: 50%;
 }
 
+/* Contact pagina */
+.container {
+    padding: 0 15%;
+   
+}
+
+
+
 /* Footer */
 footer {
     display: flex;
@@ -300,7 +308,6 @@ footer {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     padding: 3% 15%;
-    /* margin-top: 5%; */
 }
 
 .footer__headline {
@@ -355,6 +362,10 @@ footer {
 
 /* Mobiel */
 @media(max-width: 500px) {
+
+    .container {
+        padding: 0 7.5%;
+    }
 
     header {
         margin: 7.5% 7.5%;
