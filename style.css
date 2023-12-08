@@ -27,7 +27,12 @@ header {
 }
 
 /* typografie */
-h1, h2 {
+
+h1 {
+    display: none;
+}
+
+ h2 {
     font-size: 64px;
     color: #252422;
     font-family: 'Oswald', sans-serif;
@@ -36,12 +41,15 @@ h1, h2 {
     overflow-y: hidden;
 }
 
-h3 {
+
+
+/* kleine tekst boven h1/2 */
+/* h3 {
     font-size: 32px;
     color: #252422;
-}
+} */
 
-h4 {
+h3 {
     font-size: 25px;
     font-family: 'Oswald', sans-serif;
     color: #252422;
@@ -111,7 +119,7 @@ p {
     margin:auto;
   }
 
-  .callout h1 {
+  .callout h2 {
         color: #FFF;
   }
   
@@ -238,12 +246,14 @@ p {
     align-items: center;
     justify-content: space-between;
     margin: 5% 15%;
+
 }
 
 .overvideo {
     margin-top: 2%;
     max-width: 100%;
     background-color: #252422;
+  
 }
 
 .aboutsexy {
@@ -252,12 +262,39 @@ p {
     align-items: center;
     flex-direction: column;
     margin: 5% 15%;
+ 
 }
 
 .duapicca {
     max-width: 60%;
-    float: right;
+    /* float: right; */
+    display: block;
+    margin-left: auto;
+   
 }
+
+@keyframes rotate {
+    0% {
+      -webkit-transform: rotate3d(0, 0, 1, 0deg);
+      transform: rotate3d(0, 0, 1, 0deg);
+    }
+    25% {
+      -webkit-transform: rotate3d(0, 0, 1, 90deg);
+      transform: rotate3d(0, 0, 1, 90deg);
+    }
+    50% {
+      -webkit-transform: rotate3d(0, 0, 1, 180deg);
+      transform: rotate3d(0, 0, 1, 180deg);
+    }
+    75% {
+      -webkit-transform: rotate3d(0, 0, 1, 270deg);
+      transform: rotate3d(0, 0, 1, 270deg);
+    }
+    100% {
+      -webkit-transform: rotate3d(0, 0, 1, 360deg);
+      transform: rotate3d(0, 0, 1, 360deg);
+    }
+  }
 
 /* Pokoes pagina */
 .favonummers {
@@ -266,6 +303,7 @@ p {
     justify-content: center;
     margin: 5% 15%;
     text-align: center;
+    
 }
 
 .drienummers {
@@ -296,8 +334,6 @@ p {
     padding: 0 15%;
    
 }
-
-
 
 /* Footer */
 footer {
