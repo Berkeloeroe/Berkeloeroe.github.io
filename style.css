@@ -27,7 +27,6 @@ header {
 }
 
 /* typografie */
-
 h1 {
     display: none;
 }
@@ -41,14 +40,6 @@ h1 {
     overflow-y: hidden;
 }
 
-
-
-/* kleine tekst boven h1/2 */
-/* h3 {
-    font-size: 32px;
-    color: #252422;
-} */
-
 h3 {
     font-size: 25px;
     font-family: 'Oswald', sans-serif;
@@ -61,6 +52,8 @@ p {
     color: rgb(29, 29, 14);
 }
 
+/* herosectie */
+/* https://codepen.io/Fugamma/pen/bLrwYj */
 .herotekst {
     z-index: 10;
 }
@@ -176,6 +169,7 @@ p {
     border-radius: 50px;
     cursor: pointer;
     transition: 0.3s;
+    text-decoration: none;
 }
 
 .spotifyknopjeheader:hover {
