@@ -481,13 +481,13 @@ footer {
                 }
 
               
-                                .spotifyknopjeheader {
-                                    display: none;
-                                }
+                    .spotifyknopjeheader {
+                    display: none;
+                    }
 
-                                                                  .spotifyknopje {
-                                                                      width: 100%;
-                                                                      margin-top: 3% !important;
+                .spotifyknopje {
+                width: 100%;
+                                                            margin-top: 3% !important;
                                                                   }
 
                 .minifooter {
