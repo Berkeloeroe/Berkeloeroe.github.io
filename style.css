@@ -326,8 +326,22 @@ p {
 /* Contact pagina */
 .container {
     padding: 0 15%;
-   
 }
+
+/* .slider {
+	scroll-snap-type: x mandatory;	
+	display: flex;
+	
+}
+
+.skrol {
+	border-right: 1px solid white;
+	padding: 1rem;
+	min-width: 100vw;
+	scroll-snap-align: start;
+	text-align: center;
+	position: relative;
+} */
 
 /* Footer */
 footer {
