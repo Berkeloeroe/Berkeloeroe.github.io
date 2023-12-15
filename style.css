@@ -350,6 +350,19 @@ p {
     padding: 0 15%;
 }
 
+address a {
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 1.6;
+    color: rgb(29, 29, 14);
+    ;
+    
+}
+
+address h2 {
+    text-decoration: none;
+}
+
 /* .slider {
 	scroll-snap-type: x mandatory;	
 	display: flex;
