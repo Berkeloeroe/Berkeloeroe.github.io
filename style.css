@@ -172,12 +172,12 @@ p {
     text-decoration: none;
 }
 
+/* Buttons */
 .spotifyknopjeheader:hover {
     /* padding: 14px 90px; */
     opacity: 0.75;
 }
 
-/* Buttons */
 .spotifyknopje {
     font-size: 16px;
     font-weight: bolder;
@@ -195,8 +195,8 @@ p {
     opacity: 0.75;
 }
 
-/* https: //www.w3schools.com/howto/howto_js_scroll_to_top.asp */
 /* Button to top */
+/* https: //www.w3schools.com/howto/howto_js_scroll_to_top.asp */
 #myBtn {
     display: none;
     position: fixed;
